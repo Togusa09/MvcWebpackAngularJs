@@ -132,6 +132,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\app.js" />
     <Content Include="package.json" />
+    <Content Include="Scripts\app.module.js" />
     <Content Include="webpack.common.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
@@ -153,6 +154,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="dist\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -8,6 +8,13 @@
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
+<div class="row" ng-app="testApp">
+    <div class="col-md-4" ng-controller="homeController as home">
+        <p>{{home.testProperty}}</p>
+        <p>{{home.testMethod()}}</p>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
