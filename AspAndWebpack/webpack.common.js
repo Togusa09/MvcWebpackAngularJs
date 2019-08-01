@@ -2,7 +2,6 @@
 const webpack = require('webpack');
 
 module.exports = {
-    mode: 'development',
     entry: './scripts/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -14,5 +13,13 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(png|jpg|jpeg|gif|woff|woff2|ttf|eot|svg)(\?.*)?$/,
+                loader: 'file-loader?name=../dist/assets/[name].[ext]'
+            },
+          ]
+    }
 };
